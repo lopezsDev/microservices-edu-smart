@@ -16,19 +16,17 @@ import java.util.NoSuchElementException;
 public class StudentController {
 
     @Autowired
-    private StudentService studentService;
-    @Autowired
     private StudentServiceImpl studentServiceImpl;
 
     @GetMapping("/getAll")
     public ResponseEntity<List<Student>> getAllStudents() {
-        return new ResponseEntity<>(studentService.findAll(), HttpStatus.OK);
+        return new ResponseEntity<>(studentServiceImpl.findAll(), HttpStatus.OK);
     }
 
     @GetMapping("/search/{id}")
     public ResponseEntity<Student> getStudentById(@RequestParam Long id) {
         try {
-            Student student = studentService.findById(id);
+            Student student = studentServiceImpl.findById(id);
             return new ResponseEntity<>(student, HttpStatus.OK);
         } catch (NoSuchElementException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -38,7 +36,7 @@ public class StudentController {
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
     public void addStudent(@RequestBody Student student) {
-        studentService.save(student);
+        studentServiceImpl.save(student);
     }
 
     @GetMapping("/search-my-course/{idCourse}")

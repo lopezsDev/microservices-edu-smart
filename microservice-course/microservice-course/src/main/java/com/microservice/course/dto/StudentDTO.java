@@ -14,5 +14,5 @@ public class StudentDTO {
     private String name;
     private String lastName;
     private String email;
-    private Long couserId;
+    private Long courseId;
 }

@@ -4,4 +4,16 @@
     <option name="defaultUnitInitialized" value="true" />
     <option name="renamerInitialized" value="true" />
   </component>
+  <component name="PersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit name="Default">
+        <packages>
+          <package value="com.microservice.gateway" />
+        </packages>
+        <entities>
+          <entity value="com.microservice.student.entity.Student" />
+        </entities>
+      </persistence-unit>
+    </persistence-units>
+  </component>
 </project>

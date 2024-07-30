@@ -1,12 +1,10 @@
--- Inserta 10 registros de prueba
-INSERT INTO courses (name, teacher)
-VALUES ('Mathematics', 'Mr. John Doe'),
-       ('Physics', 'Dr. Jane Smith'),
-       ('Chemistry', 'Prof. Emily Johnson'),
-       ('Biology', 'Dr. Michael Brown'),
-       ('Computer Science', 'Ms. Anna Davis'),
-       ('History', 'Mr. David Wilson'),
-       ('Geography', 'Ms. Sophia Martinez'),
-       ('Literature', 'Mr. James Taylor'),
-       ('Art', 'Ms. Olivia Anderson'),
-       ('Music', 'Mr. Chris Brown');
+INSERT INTO courses (name, teacher) VALUES ('Mathematics', 'Mr. John Doe');
+INSERT INTO courses (name, teacher) VALUES ('Physics', 'Dr. Jane Smith');
+INSERT INTO courses (name, teacher) VALUES ('Chemistry', 'Prof. Emily Johnson');
+INSERT INTO courses (name, teacher) VALUES ('Biology', 'Dr. Michael Brown');
+INSERT INTO courses (name, teacher) VALUES ('Computer Science', 'Ms. Anna Davis');
+INSERT INTO courses (name, teacher) VALUES ('History', 'Mr. David Wilson');
+INSERT INTO courses (name, teacher) VALUES ('Geography', 'Ms. Sophia Martinez');
+INSERT INTO courses (name, teacher) VALUES ('Literature', 'Mr. James Taylor');
+INSERT INTO courses (name, teacher) VALUES ('Art', 'Ms. Olivia Anderson');
+INSERT INTO courses (name, teacher) VALUES ('Music', 'Mr. Chris Brown');
